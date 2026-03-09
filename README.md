@@ -58,3 +58,13 @@ For analysis, a cleaned subset of approximately 13.8 million rows was generated.
 ## Conclusion
 
 This analysis demonstrates how large public datasets can be used to identify patterns in consumer financial issues. The results highlight the dominance of credit reporting complaints and the rapid growth of complaint reporting in recent years.
+## Visual Analysis
+
+### Complaints by Product
+![Complaints by Product](complaints_by_product.png)
+
+### Complaints by State
+![Complaints by State](complaints_by_state.png)
+
+### Complaint Trends Over Time
+![Complaints Over Time](complaints_over_time.png)
