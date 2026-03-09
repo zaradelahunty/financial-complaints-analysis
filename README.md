@@ -84,6 +84,44 @@ Several limitations should be considered:
 • The dataset contains reported complaints rather than verified regulatory violations.
 
 Future work could normalise complaints by state population and explore company-level complaint patterns.
+## Example SQL Analysis
+
+While the primary analysis was conducted using Python and pandas, similar insights can be generated using SQL queries commonly used in data warehouses such as BigQuery, Snowflake, or PostgreSQL.
+
+Example: Identifying financial products with the highest complaint volumes.
+
+```sql
+SELECT
+    product,
+    COUNT(*) AS complaint_count
+FROM financial_complaints
+GROUP BY product
+ORDER BY complaint_count DESC
+LIMIT 10;
+```
+
+Example: Complaint volumes by state.
+
+```sql
+SELECT
+    state,
+    COUNT(*) AS complaint_count
+FROM financial_complaints
+GROUP BY state
+ORDER BY complaint_count DESC
+LIMIT 10;
+```
+
+Example: Complaint trends over time.
+
+```sql
+SELECT
+    EXTRACT(YEAR FROM date_received) AS year,
+    COUNT(*) AS complaint_count
+FROM financial_complaints
+GROUP BY year
+ORDER BY year;
+```
 ## Visual Analysis
 
 ### Complaints by Product
