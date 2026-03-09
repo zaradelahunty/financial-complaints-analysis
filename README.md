@@ -58,6 +58,32 @@ For analysis, a cleaned subset of approximately 13.8 million rows was generated.
 ## Conclusion
 
 This analysis demonstrates how large public datasets can be used to identify patterns in consumer financial issues. The results highlight the dominance of credit reporting complaints and the rapid growth of complaint reporting in recent years.
+## Possible Drivers of Complaint Growth
+
+Several factors may explain the sharp increase in complaints after 2020:
+
+• Increased consumer awareness of the CFPB complaint platform during the COVID-19 pandemic.
+
+• Greater digital engagement with financial services, increasing exposure to credit reporting and banking disputes.
+
+• Expansion of credit reporting disputes related to identity theft and fraud.
+
+• Increased regulatory visibility and media attention encouraging consumers to file formal complaints.
+
+While this analysis focuses on complaint trends, further work could explore relationships between economic conditions and complaint volumes.
+## Limitations of the Analysis
+
+This analysis focuses on complaint volumes rather than complaint severity.
+
+Several limitations should be considered:
+
+• Complaint volumes may reflect increased awareness of reporting systems rather than worsening financial services.
+
+• Larger states naturally generate more complaints due to population size.
+
+• The dataset contains reported complaints rather than verified regulatory violations.
+
+Future work could normalise complaints by state population and explore company-level complaint patterns.
 ## Visual Analysis
 
 ### Complaints by Product
